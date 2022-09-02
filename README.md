@@ -57,7 +57,7 @@ git branch
 
 To setup CI / CD pipeline in Heroku, we need the following
 1.  HEROKU_EMAIL
-2.  HEROKU_API_KEY : Can be found in HEROKU under "Account Settings" = 16717e49-12d7-4520-bb58-3651c45ea108
+2.  HEROKU_API_KEY : Can be found in HEROKU under "Account Settings" <>
 3.  HEROKU_APP_NAME : ml-regression-sherry
 
 BUILD DOCKER IMAGE
