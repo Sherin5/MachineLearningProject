@@ -44,3 +44,43 @@ To push the changes / versions to git -- Here origin is a variable that holds th
 ```
 git push origin man
 ```
+
+To check remote url
+```
+git remote -v
+```
+
+To check the branch
+```
+git branch
+```
+
+To setup CI / CD pipeline in Heroku, we need the following
+1.  HEROKU_EMAIL
+2.  HEROKU_API_KEY : Can be found in HEROKU under "Account Settings" = 16717e49-12d7-4520-bb58-3651c45ea108
+3.  HEROKU_APP_NAME : ml-regression-sherry
+
+BUILD DOCKER IMAGE
+```
+docker build -t <imagename>:<tagename> .
+```
+
+To list Docker image
+```
+docker images
+```
+
+Run Docker image
+```
+docker run -p 5000:5000 -e PORT=5000 <imageid>
+```
+
+To check all the running docker containers
+```
+docker ps
+```
+
+To stop any docker container
+```
+docker stop <container_id>
+```
