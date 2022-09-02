@@ -29,3 +29,18 @@ To check the status of files on git
 ```
 git status
 ```
+
+To check all the versions of the files
+```
+git log
+```
+
+To commit all the changes to git
+```
+git commit -m "message"
+```
+
+To push the changes / versions to git -- Here origin is a variable that holds the url of the repo
+```
+git push origin man
+```
