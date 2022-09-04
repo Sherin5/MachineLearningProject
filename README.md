@@ -84,3 +84,8 @@ To stop any docker container
 ```
 docker stop <container_id>
 ```
+
+To install all the libraries without using pip install -r requirements.txt instead use
+```
+python setup.py install
+```
