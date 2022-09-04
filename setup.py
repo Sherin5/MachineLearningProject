@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import find_packages, setup
 from typing import List
 
 PROJECTNAME = "housing-predictor"
@@ -13,7 +13,7 @@ def get_requirements_list()->List[str]:
 
     """
     with open(REQUIREMENTS_FILE_NAME) as requirement_file:
-        return requirement_file.readlines()
+        return requirement_file.readlines().remove("-e .")
 
 
 
@@ -22,7 +22,7 @@ setup(
     version=VERSION,
     author=AUTHOR,
     description=DESCRIPTION,
-    packages=['housing'],
+    packages=find_packages(),
     install_requires=get_requirements_list()
 
 )
